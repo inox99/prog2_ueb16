@@ -3,8 +3,15 @@ public class Testdialog {
       //variblen definieren
       float values[] = { 1, 2, 3, 4, 5 };
       //String[] operations = { "sum" };
-      String[] operations = { "subtract" };
+      String[] operations = { "subtract", "sum" };
 
+      // initialwerteausgeben
+      for (float f : values) {
+         System.out.printf("%f, ", f);
+      }
+      System.out.println();
+
+      System.out.println(String.join(", ", operations));
       // operationen ausführen
       NumberCruncherAnonym cruncherAnonym = new NumberCruncherAnonym(values);
       cruncherAnonym.crunch(operations);
@@ -13,5 +20,8 @@ public class Testdialog {
       for (float f : values) {
          System.out.printf("%f, ", f);
       }
+      System.out.println();
+
+      
    }
 }

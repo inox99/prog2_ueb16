@@ -1,12 +1,8 @@
-public class NumberCruncherAnonym implements CrunchOperation {
+public class NumberCruncherAnonym  {
    float values[];
 
    public NumberCruncherAnonym(float values[]) {
       this.values = values;
-   }
-
-   public void crunch(float values[]) {
-
    }
 
    public void crunch(String[] operations) {

@@ -1,5 +1,6 @@
 public class Testdialog {
    public static void main(String[] args) {
+      try {
          // variblen definieren
          float values[] = { 1, 2, 3, 4, 5 };
          // String[] operations = { "sum" };
@@ -45,5 +46,11 @@ public class Testdialog {
             System.out.printf("%f, ", f);
          }
          System.out.println();
+
+      } catch (
+
+      Exception e) {
+         System.out.println(e);
+      }
    }
 }

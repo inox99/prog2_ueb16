@@ -1,7 +1,9 @@
-public class NumberCruncherAnonym  {
+public class NumberCruncherAnonym {
    float values[];
 
-   public NumberCruncherAnonym(float values[]) {
+   public NumberCruncherAnonym(float values[]) throws Exception {
+      if (values.length < 2)
+         throw new Exception("zu wenige werte");
       this.values = values;
    }
 

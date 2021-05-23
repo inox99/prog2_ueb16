@@ -1,7 +1,9 @@
 public class NumberCruncherTopLevel {
    float values[];
 
-   public NumberCruncherTopLevel(float values[]) {
+   public NumberCruncherTopLevel(float values[]) throws Exception {
+      if (values.length < 2)
+         throw new Exception("zu wenige werte");
       this.values = values;
    }
 

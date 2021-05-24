@@ -1,6 +1,22 @@
 public class Testdialog {
+
+   void TestTopLevel(float values[]) {
+
+      
+   }
+
+   void TestAnonym(float values[]) {
+
+   }
+
    public static void main(String[] args) {
       try {
+         if (args.length > 0) {
+            for (String arg : args) {
+               System.out.println(arg);
+            }
+            return;
+         }
          // variblen definieren
          float values[] = { 1, 2, 3, 4, 5 };
          // String[] operations = { "sum" };
@@ -16,11 +32,6 @@ public class Testdialog {
          // operationen ausführen
          System.out.println("mit NumberCruncherAnonym");
          NumberCruncherAnonym cruncherAnonym = new NumberCruncherAnonym(values);
-         // initialwerteausgeben
-         for (float f : values) {
-            System.out.printf("%f, ", f);
-         }
-         System.out.println();
          cruncherAnonym.crunch(operations);
 
          // ergebnis ausgeben
@@ -34,12 +45,12 @@ public class Testdialog {
          System.out.println();
          float values2[] = { 1, 2, 3, 4, 5 };
          System.out.println(String.join(", ", operations));
-         System.out.println("mit NumberCruncherTopLevel");
          NumberCruncherTopLevel cruncherTopLevel = new NumberCruncherTopLevel(values2);
          for (float f : values2) {
             System.out.printf("%f, ", f);
          }
          System.out.println();
+         System.out.println("mit NumberCruncherTopLevel");
          cruncherTopLevel.crunch(operations);
          // ergebnis ausgeben
          for (float f : values2) {

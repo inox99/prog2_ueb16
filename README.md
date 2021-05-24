@@ -12,3 +12,13 @@ The workspace contains two folders by default, where:
 ## Dependency Management
 
 The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+
+git remote add origin https://github.com/inox99/prog2_ueb16.git
+git push -u origin 
+
+git branch -M main
+git push -u origin main
+
+git remote add origin https://github.com/inox99/prog2_ueb16.git
+git branch -M main
+git push -u origin main

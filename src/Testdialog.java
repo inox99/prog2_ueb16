@@ -2,7 +2,6 @@ public class Testdialog {
 
    void TestTopLevel(float values[]) {
 
-      
    }
 
    void TestAnonym(float values[]) {
@@ -11,14 +10,19 @@ public class Testdialog {
 
    public static void main(String[] args) {
       try {
-         if (args.length > 0) {
-            for (String arg : args) {
-               System.out.println(arg);
-            }
-            return;
-         }
-         // variblen definieren
+         // if (args.length > 0) {
+         // for (String arg : args) {
+         // System.out.println(arg);
+         // }
+         // return;
+         // }
+
+         // ----------------------------------------------------------------------------------------
+         // mit NumberCruncherAnonym
+         // variablen definieren
          float values[] = { 1, 2, 3, 4, 5 };
+         //values = new float[] {};
+         
          // String[] operations = { "sum" };
          String[] operations = { "subtract", "sum" };
 
@@ -40,7 +44,7 @@ public class Testdialog {
          }
          System.out.println();
 
-         //
+         // ----------------------------------------------------------------------------------------
          // das gleiche mit NumberCruncherTopLevel
          System.out.println();
          float values2[] = { 1, 2, 3, 4, 5 };
